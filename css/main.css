@@ -60,6 +60,7 @@ ul.posts li {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 
 .main {
@@ -77,6 +78,7 @@ ul.posts li {
     padding: 5px;
     margin: 5px;
     background-color: #fff;
+    overflow-y: scroll;
 }
 
 .navbar {

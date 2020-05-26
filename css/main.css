@@ -12,6 +12,7 @@ body, html {
 
 html {
     height: 100%;
+    background-color: cadetblue;
 }
 
 nav ul, footer ul {
@@ -71,20 +72,22 @@ ul.posts li {
 
 .content {
     border: 1px solid #000;
-    height: 70%;
+    height: 60%;
     width: 60%;
     padding: 5px;
     margin: 5px;
+    background-color: #fff;
 }
 
 .navbar {
     border: 1px solid #000;
-    height: 70%;
+    height: 60%;
     width: 30%;
     padding: 5px;
     margin: 5px;
     display: flex;
     align-items: center;
+    background-color: #fff;
 }
 
 nav ul li {
@@ -98,7 +101,7 @@ nav ul li {
     margin-top: 0px;
     margin-left: 0px;
     width: 100%;
-    height: 20%;
+    height: 30%;
     background-image: url('../assets/willowleaves.png');
     background-repeat: repeat-x;
     background-size: contain;

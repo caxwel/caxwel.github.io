@@ -1,7 +1,19 @@
 body {
-    margin: 60px auto;
+    margin: 0;
     width: 70%;
+    height: 90%;
 }
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    height: 100%;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -44,18 +56,30 @@ ul.posts li {
 
 .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.main {
+    display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 90%;
 }
 
 .content {
     border: 1px solid #000;
     height: 70%;
     width: 60%;
+    padding: 5px;
+    margin: 5px;
 }
 
 .navbar {
     border: 1px solid #000;
     height: 70%;
     width: 30%;
+    padding: 5px;
+    margin: 5px;
 }

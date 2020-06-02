@@ -3,7 +3,7 @@ url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
 
 body {
     margin: 0;
-    width: 70%;
+    width: 90%;
     height: 100%;
 }
 
@@ -15,7 +15,7 @@ body, html {
 
 html {
     height: 100%;
-    background-color: cadetblue;
+    background-color: #000;
 }
 
 nav ul, footer ul {
@@ -42,13 +42,13 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Nova Cut', 'Sans-Serif';
-    animation: glitch 1s linear infinite;
+    color: #fff;
 }
 
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #fff;
 }
 
 footer {
@@ -82,24 +82,33 @@ ul.posts li {
 }
 
 .content {
-    border: 1px solid #000;
+    border-image-source: url('../assets/frameborder1.png');
+    border-image-slice: 200;
+    border-image-repeat: stretch;
+    border-width: 90px;
+    border-style: solid;
     height: 60%;
-    width: 60%;
+    width: 55%;
     padding: 5px;
     margin: 5px;
-    background-color: #fff;
+    background-color: #000;
     overflow-y: scroll;
+    position: relative;
 }
 
 .navbar {
-    border: 1px solid #000;
+    border-image-source: url('../assets/frameborder2.png');
+    border-image-slice: 220 210;
+    border-image-repeat: stretch;
+    border-width: 100px;
+    border-style: solid;
     height: 60%;
-    width: 30%;
+    width: 20%;
     padding: 5px;
     margin: 5px;
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: #000;
 }
 
 nav ul li {
@@ -108,7 +117,7 @@ nav ul li {
     padding: 2vw;
 }
 
-.willow {
+/* .willow {
     position: absolute;
     margin-top: 0px;
     margin-left: 0px;
@@ -118,59 +127,18 @@ nav ul li {
     background-repeat: repeat-x;
     background-size: contain;
     align-self: start;
+} */
+
+.blurb {
+  height: 60%;
+  margin-top: 20%;
 }
 
-@keyframes glitch{
-    2%,64%{
-      transform: translate(2px,0) skew(0deg);
-    }
-    4%,60%{
-      transform: translate(-2px,0) skew(0deg);
-    }
-    62%{
-      transform: translate(0,0) skew(5deg); 
-    }
-  }
-  
-  h1:before,
-  h1:after{
-    content: attr(title);
+.name {
     position: absolute;
     left: 0;
-  }
-  
-  h1:before{
-    animation: glitchTop 1s linear infinite;
-    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-  }
-  
-  @keyframes glitchTop{
-    2%,64%{
-      transform: translate(2px,-2px);
-    }
-    4%,60%{
-      transform: translate(-2px,2px);
-    }
-    62%{
-      transform: translate(13px,-1px) skew(-13deg); 
-    }
-  }
-  
-  h1:after{
-    animation: glitchBottom 1.5s linear infinite;
-    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  }
-  
-  @keyframes glitchBottom{
-    2%,64%{
-      transform: translate(-2px,0);
-    }
-    4%,60%{
-      transform: translate(-2px,0);
-    }
-    62%{
-      transform: translate(-22px,5px) skew(21deg); 
-    }
-  }
+    bottom: -5vw;
+    letter-spacing: -7px;
+    font-size: 1.9vw;
+}
+

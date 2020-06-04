@@ -1,18 +1,42 @@
-@import 
-url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+@font-face {
+  font-family: 'kazimirtext-reguluploadedfile';
+  src: url('../assets/kazimirtext-regular-webfont.woff2') format('woff2'),
+       url('../assets/kazimirtext-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kazimirtext-lightuploadedfile';
+  src: url('../assets/kazimirtext-light-webfont.woff2') format('woff2'),
+       url('../assets/kazimirtext-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kazimirtext-blackuploadedfile';
+  src: url('../assets/kazimirtext-black-webfont.woff2') format('woff2'),
+       url('../assets/kazimirtext-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
     margin: 0;
-    width: 90%;
+    width: 95%;
     height: 100%;
     --horizontal: 10px;
     --vertical: 10px;
+    overflow: hidden;
 }
 
 body, html {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    font-family: 'kazimirtext-lightuploadedfile', 'Sans-Serif';
 }
 
 html {
@@ -20,8 +44,8 @@ html {
     background-color: #000;
 }
 
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+nav ul, footer ul, footer a {
+    font-family:'kazimirtext-reguluploadedfile', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -32,9 +56,14 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 
+footer a {
+  font-size: 0.8vw;
+}
+
 a {
-    text-decoration: none;
-    color: #999;
+  color: #fff;
+  font-size: 1vw;
+  text-decoration: none;
 }
 
 a:hover {
@@ -42,20 +71,25 @@ a:hover {
 }
 
 h1 {
-    font-size: 3em;
-    font-family:'Nova Cut', 'Sans-Serif';
-    color: #fff;
+    font-size: 2em;
+    font-family:'kazimirtext-blackuploadedfile', 'Sans-Serif';
+    color: #000;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.4em;
-    color: #fff;
+    color: #000;
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #fff;
     font-size: .8em;
+    width: 100%;
+}
+
+.foot {
+    width: 80%;
 }
 
 ul.posts { 
@@ -69,7 +103,6 @@ ul.posts li {
 
 .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     height: 100%;
     width: 100%;
@@ -80,7 +113,8 @@ ul.posts li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    height: 100%;
+    width: 90%;
 }
 
 .content {
@@ -90,36 +124,37 @@ ul.posts li {
     border-image-repeat: stretch;
     border-width: 90px;
     border-style: solid;
-    height: 60%;
-    width: 55%;
+    height: 65%;
+    width: 70%;
     padding: 5px;
-    margin: 5px;
+    margin-left: -50px;
     overflow: hidden;
     position: relative;
 }
 
 .navbar {
-    border-image-source: url('../assets/frameborder2.png');
-    border-image-slice: 220 210;
-    border-image-repeat: stretch;
-    border-width: 100px;
-    border-style: solid;
-    height: 60%;
-    width: 20%;
+    height: 100%;
+    width: 10%;
     padding: 5px;
     margin: 5px;
     display: flex;
-    align-items: center;
     overflow: hidden;
     background-size: cover;
     position: relative;
+    color: #fff;
+    flex-direction: column;
 }
 
 nav ul li {
     display: flex;
-    align-content: space-between;
-    padding: 2vw;
+    padding: 0.3vw;
 }
+
+nav img {
+  width: 3vw;
+  height: auto;
+}
+
 
 .blurb {
   height: 85%;
@@ -129,16 +164,25 @@ nav ul li {
 
 .name {
     position: absolute;
+    width: 100%;
+    height: 100%;
     left: 0;
-    bottom: -5vw;
-    letter-spacing: -7px;
-    font-size: 1.9vw;
+    top: 0;
+    letter-spacing: 1vmax;
+    line-height: 6vmax;
     padding-right: 10px;
+    padding-left: 10px;
 }
 
-.imgloaded .name {
+.name h1 {
+  font-size: 7.4vw;
+  font-family:'kazimirtext-blackuploadedfile', 'Sans-Serif';
+  color: #000;
+}
+
+.imgloaded h1 {
   animation-name: glitch-text;
-  animation-delay: 3s;
+  animation-delay: 2s;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
@@ -159,7 +203,7 @@ nav ul li {
   left: -10px;
   width: 110%;
   height: 110%;
-  background: url('../assets/EANAOYCY5VAV7CTYZEJDUBA5HY.jpeg');
+  background: url('../assets/ocean1.png');
   background-size: cover;
   transform: translate3d(0px, 0, 0);
   background-blend-mode: none;
@@ -195,64 +239,6 @@ nav ul li {
 }
 
 .imgloaded .glitch:nth-child(5) {
-  background-color: #af4949;
-  background-blend-mode: overlay;
-  animation-name: glitch-flash;
-}
-
-.glitchContainer2 {
-  position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
-   z-index: -1;
-}
-
-.glitch2 {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 110%;
-  height: 110%;
-  background: url('../assets/EANAOYCY5VAV7CTYZEJDUBA5HY.jpeg');
-  background-size: cover;
-  transform: translate3d(0px, 0, 0);
-  background-blend-mode: none;
-  overflow: hidden;
-}
-
-.glitch2:nth-child(n+2) {
-  opacity: 0;
-}
-
-.imgloaded .glitch2:nth-child(n+2) {
-  animation-duration: 4s;
-  animation-delay: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.imgloaded .glitch2:nth-child(2) {
-  background-color: #7d948e;
-  background-blend-mode: overlay;
-  animation-name: glitch-1;
-}
-
-.imgloaded .glitch2:nth-child(3) {
-  background-color: transparent;
-  background-blend-mode: none;
-  animation-name: glitch-2;
-}
-
-.imgloaded .glitch2:nth-child(4) {
-  background-color: transparent;
-  background-blend-mode: none;
-  animation-name: glitch-3;
-}
-
-.imgloaded .glitch2:nth-child(5) {
   background-color: #af4949;
   background-blend-mode: overlay;
   animation-name: glitch-flash;

@@ -37,6 +37,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     font-family: 'kazimirtext-lightuploadedfile', 'Sans-Serif';
+    font-size: 1.5vw;
 }
 
 html {
@@ -70,9 +71,21 @@ a:hover {
     text-decoration: underline;
 }
 
+.post a {
+  color: #3C4746;
+  font-size: 1.8vw;
+  font-family: 'kazimirtext-blackuploadedfile', 'Sans-Serif';
+}
+
+.blurb a {
+  color: #3C4746;
+  font-size: 1.8vw;
+  font-family: 'kazimirtext-blackuploadedfile', 'Sans-Serif';
+}
+
 h1 {
     font-size: 2em;
-    font-family:'kazimirtext-blackuploadedfile', 'Sans-Serif';
+    font-family: 'kazimirtext-blackuploadedfile', 'Sans-Serif';
     color: #000;
 }
 
@@ -126,10 +139,11 @@ ul.posts li {
     border-style: solid;
     height: 65%;
     width: 70%;
-    padding: 5px;
     margin-left: -50px;
     overflow: hidden;
     position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .navbar {
@@ -155,11 +169,39 @@ nav img {
   height: auto;
 }
 
+.portrait {
+  position: absolute;
+  bottom: -6px;
+  right: 0px;
+  width: 50vh;
+}
+
+.portrait img {
+  width: 100%;
+}
+
 
 .blurb {
-  height: 85%;
+  height: 100%;
   overflow-y: scroll;
   z-index: 2;
+  position: relative;
+  padding: 0;
+}
+
+#about {
+  overflow: hidden;
+}
+
+.aboutPage {
+  display: flex;
+  flex-direction: row;
+}
+
+.extra {
+  width: 50%;
+  position: absolute;
+  left: 0px;
 }
 
 .name {
@@ -339,3 +381,37 @@ nav img {
       transform: translate3d(0, 0, 0);
   } 
 } 
+
+@media only screen and (orientation: portrait) {
+
+  .portrait {
+    width: 40vw;
+    margin-right: 8vw;
+  }
+
+  .aboutPage {
+    flex-direction: column;
+  }
+
+  .extra {
+    height: 60%;
+    width: 100%;
+    font-size: 2vh;
+  }
+
+  .content {
+    border-image-source: url('../assets/frameborder2.png');
+  }
+
+  .post {
+    font-size: 3vw;
+  }
+  .name {
+    padding-left: 0px;
+    top: 19%;
+  }
+  .name h1 {
+    font-size: 7.8vw;
+    letter-spacing: 0.7vw;
+  }
+}

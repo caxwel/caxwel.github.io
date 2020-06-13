@@ -215,6 +215,12 @@ nav img {
   margin-top: 5px;
 }
 
+.social { 
+  position: absolute;
+  margin-left: 5px;
+  bottom: 5px; 
+}
+
 .name {
     position: absolute;
     width: 100%;

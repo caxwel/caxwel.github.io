@@ -36,13 +36,17 @@ body, html {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: 'kazimirtext-lightuploadedfile', 'Sans-Serif';
+    font-family: 'kazimirtext-reguluploadedfile', 'Sans-Serif';
     font-size: 1.5vw;
 }
 
 html {
     height: 100%;
     background-color: #000;
+}
+
+h2, h3 {
+  font-family: 'kazimirtext-blackuploadedfile', 'Sans-Serif';
 }
 
 nav ul, footer ul, footer a {
@@ -172,7 +176,7 @@ nav img {
 .portrait {
   position: absolute;
   bottom: -6px;
-  right: 0px;
+  right: -20px;
   width: 50vh;
 }
 
@@ -202,6 +206,13 @@ nav img {
   width: 50%;
   position: absolute;
   left: 0px;
+}
+
+#projectlist img {
+  width: 14vw;
+  float: left;
+  margin-right: 8px;
+  margin-top: 5px;
 }
 
 .name {

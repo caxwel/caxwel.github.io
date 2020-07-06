@@ -304,19 +304,19 @@ nav img {
     left: 0;
     top: 0;
     letter-spacing: 1vmax;
-    line-height: 6vmax;
+    line-height: 11vh;
     padding-right: 10px;
     padding-left: 10px;
 }
 
 .name h1 {
-  font-size: 7.2vw;
+  font-size: 13vh;
   font-family:'kazimirtext-reguluploadedfile', 'Sans-Serif';
   color: #000;
 }
 
 #max {
-  font-size: 7.8vw;
+  font-size: 14vh;
   font-family:'kazimirtext-blackuploadedfile', 'Sans-Serif';
 }
 

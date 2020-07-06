@@ -194,13 +194,14 @@ nav img {
   width: 3vw;
   height: auto;
 }
+
 .pdfImg {
   z-index: 3;
   width: 60px;
   height: 74px;
   position: absolute;
   /* margin-left: 40vw; */
-  margin-top: 28px;
+  margin-top: 18px;
   margin-left: 53vw;
 }
 .pdfImg img {

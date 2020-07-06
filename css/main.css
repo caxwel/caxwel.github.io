@@ -72,22 +72,38 @@ a {
   color: #fff;
   font-size: 0.9vw;
   text-decoration: none;
+  transition: color 2s;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #000;
+}
+.post, .meta{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.3vw;
 }
 
 .post a {
   color: #3C4746;
   font-size: 1.8vw;
   font-family: 'kazimirtext-blackuploadedfile', 'Sans-Serif';
+  transition: color 2s;
 }
 
 .blurb a {
   color: #3C4746;
   font-size: 1.8vw;
   font-family: 'kazimirtext-blackuploadedfile', 'Sans-Serif';
+  transition: color 2s;
+}
+
+.post a:hover {
+  color: #fff;
+}
+
+.blurb a:hover {
+  color: #fff;
 }
 
 h1 {
@@ -262,6 +278,12 @@ nav img {
 #max {
   font-size: 7.8vw;
   font-family:'kazimirtext-blackuploadedfile', 'Sans-Serif';
+}
+
+.tech {
+  background: #000;
+  color: #fff;
+  border: 3px double #fff;
 }
 
 .imgloaded h1 {
@@ -519,7 +541,7 @@ label:hover {
 
   .extra {
     height: 60%;
-    width: 42vw;;
+    width: 4vw;
     right: 25px;
     font-size: 2vh;
   }

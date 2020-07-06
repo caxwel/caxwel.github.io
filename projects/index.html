@@ -3,51 +3,147 @@ layout: default
 title: Projects
 ---
 <div class="blurb" id="projectlist">
-<h1>/ My Projects</h1>
-<h2 style="text-align: right">/ / Personal Projects</h2>
-<h3>KNIGHTS ONLY</h3>
-<i>technologies: Vue, Node.js, HTML/CSS</i>
-<br/><img src="/assets/knightsonly.png"/>Web app that draws you, a knight, a personal crest based on your answers to various word association questions. 
-Images are drawn and added to question by question on HTML canvas. 
-<br/>
-Try it out <a href="https://personal-crest-designer.herokuapp.com">here</a> via heroku! <br/><br/>
-<h3>NO DIET TALK</h3>
-<i>technologies: HTML, JavaScript</i>
-<br/>
-<img src="/assets/nodiettalk.png"/>Browser extension that censors weight loss & diet talk for browsing recipes safely online. 
-Word-replacement map that substitutes words no one wants to see with 🌱🌲🍄🐚 nature emoji everyone wants to see.
-Made after many requests for a function like this!
-<br/>
-Try it out <a href="https://chrome.google.com/webstore/detail/no-diet-talk/afcccemlpogdcdldlcgoaepcolcplcln">here</a> via chrome web store! <br/><br/>
-<h3>crypticgen</h3>
-<i>technologies: Vue, Node.js/Express, PostgreSQL, HTML/CSS</i>
-<br/><img src="/assets/crypticgen.png"/>Web app (a very sparkly web app) that generates writing prompts (or surprising tweets!) from a database of unusual vocabulary.
-<br>
-Check it out <a href="https://github.com/caxwel/crypticgen">here</a> on my github! <br/><br/>
-<h3>starfield</h3>
-<i>technologies: Unity/C#, WebGL</i>
-<br/><img src="/assets/starfield.png"/>Experiment/web mini game where you can make and customize your own starfield and explore a mysterious part of space. <br/>
-Created as a challenge to learn a new language in 4 days (I chose C# and, if you keep reading here, you'll see I revisited it right away).
-<br/>
-Check it out <a href="https://github.com/caxwel/star-field">here</a> on my github, with a link to play it yourself!
-<br/>
-<h2 style="text-align: right">/ / Group Projects</h2>
-<h3>overcast</h3>
-<i>technologies: React/Redux, Node.js/Express, PostgreSQL, HTML/CSS</i>
-<br/><img src="/assets/overcastlogo.png"/>Music-playing app that generates playlists based on weather at user's location & genre choice. <br/>
-Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.<br/>
-Try it out <a href="https://quiet-sea-34007.herokuapp.com/">here</a> via heroku and check out our github repository <a href="https://github.com/Overcast-CC11/overcast">here</a>!
-<h3>destiNations</h3>
-<i>technologies: Unity/C#, Node.js/Express, Firebase</i>
-<br/><img src="/assets/destinationslogo.png"/>An educational, interactive mobile app that displays real flight paths and the planes' destination countries. 
-Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly!
-<br/>Made as Frontend Lead in a team of five engineers. <br/>
-Check it out <a href="https://github.com/cinnamon-buns/destiNations-front/">here</a> on github, with links to download for iOS and Android!
-<br/>
-<h2 style="text-align: right">/ / Public Tech Talks</h2>
-<h3>CSS Art & Creative CSS</h3>
-<i>technologies: CSS/HTML</i>
-<br/><img src="/assets/moongift.gif"/>Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. 
-A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.
-<br/>Check out the artwork featured in my talk <a href="https://github.com/caxwel/moonphases">here</a> and <a href="https://github.com/caxwel/wheel-of-fortune-css">here</a>, and watch me give my talk <a href="https://www.youtube.com/watch?v=doq3p1wKBvo">here</a> at 2:04:25!
+    <h1>/ My Projects</h1>
+<ul class="tabs" role="tablist">
+    <li>
+        <input type="radio" name="tabs" id="tab1" checked />
+        <label for="tab1"
+               role="tab" 
+               aria-selected="true" 
+               aria-controls="panel1" 
+               tabindex="0">CREATIVE CSS</label>
+        <div id="tab-content1" 
+             class="tab-content"
+             role="tabpanel" 
+             aria-labelledby="creativecss" 
+             aria-hidden="false">
+             <i>technologies: CSS/HTML</i>
+             <br/><img src="/assets/moongift.gif"/>Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. 
+             A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.
+             <br/>Check out the artwork featured in my talk <a href="https://github.com/caxwel/moonphases">here</a> and <a href="https://github.com/caxwel/wheel-of-fortune-css">here</a>, and watch me give my talk <a href="https://www.youtube.com/watch?v=doq3p1wKBvo">here</a> at 2:04:25!              
+            </div>
+    </li>
+
+    <li>
+        <input type="radio" name="tabs" id="tab2" />
+        <label for="tab2"
+               role="tab" 
+               aria-selected="false" 
+               aria-controls="panel2" 
+               tabindex="0">OVERCAST</label>
+        <div id="tab-content2" 
+             class="tab-content"
+             role="tabpanel" 
+             aria-labelledby="overcast" 
+             aria-hidden="true">
+             <i>technologies: React/Redux, Node.js/Express, PostgreSQL, HTML/CSS</i>
+             <br/><img src="/assets/overcastlogo.png"/>Music-playing app that generates playlists based on weather at user's location & genre choice. <br/>
+             Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.<br/>
+             Try it out <a href="https://quiet-sea-34007.herokuapp.com/">here</a> via heroku and check out our github repository <a href="https://github.com/Overcast-CC11/overcast">here</a>!              
+            </div>
+    </li>
+
+    <li>
+        <input type="radio" name="tabs" id="tab3" />
+        <label for="tab3"
+               role="tab" 
+               aria-selected="false" 
+               aria-controls="panel3" 
+               tabindex="0">DESTINATIONS</label>
+        <div id="tab-content3" 
+             class="tab-content"
+             role="tabpanel" 
+             aria-labelledby="destinations" 
+             aria-hidden="true">
+             <i>technologies: Unity/C#, Node.js/Express, Firebase</i>
+             <br/><img src="/assets/destinationslogo.png"/>An educational, interactive mobile app that displays real flight paths and the planes' destination countries. 
+             Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly!
+             <br/>Made as Frontend Lead in a team of five engineers. <br/>
+             Check it out <a href="https://github.com/cinnamon-buns/destiNations-front/">here</a> on github, with links to download for iOS and Android!              
+            </div>
+    </li>
+
+    <li>
+        <input type="radio" name="tabs" id="tab4" />
+        <label for="tab4" 
+               role="tab" 
+               aria-selected="false" 
+               aria-controls="panel4" 
+               tabindex="0">KNIGHTS ONLY</label>
+        <div id="tab-content4" 
+             class="tab-content" 
+             role="tabpanel" 
+             aria-labelledby="knightsonly" 
+             aria-hidden="true">
+             <i>technologies: Vue, Node.js, HTML/CSS</i>
+             <br/><img src="/assets/knightsonly.png"/>Web app that draws you, a knight, a personal crest based on your answers to various word association questions. 
+             Images are drawn and added to question by question on HTML canvas. 
+             <br/>
+             Try it out <a href="https://personal-crest-designer.herokuapp.com">here</a> via heroku! <br/><br/>             
+            </div>
+    </li>
+  
+    <li>
+        <input type="radio" name="tabs" id="tab5" />
+        <label for="tab5"
+               role="tab" 
+               aria-selected="false" 
+               aria-controls="panel5" 
+               tabindex="0">NO DIET TALK</label>
+        <div id="tab-content5" 
+             class="tab-content"
+             role="tabpanel" 
+             aria-labelledby="nodiettalk" 
+             aria-hidden="true">
+             <i>technologies: HTML, JavaScript</i>
+             <br/>
+             <img src="/assets/nodiettalk.png"/>Browser extension that censors weight loss & diet talk for browsing recipes safely online. 
+             Word-replacement map that substitutes words no one wants to see with 🌱🌲🍄🐚 nature emoji everyone wants to see.
+             Made after many requests for a function like this!
+             <br/>
+             Try it out <a href="https://chrome.google.com/webstore/detail/no-diet-talk/afcccemlpogdcdldlcgoaepcolcplcln">here</a> via chrome web store! <br/><br/>             
+            </div>
+    </li>
+
+    <li>
+        <input type="radio" name="tabs" id="tab6" />
+        <label for="tab6"
+               role="tab" 
+               aria-selected="false" 
+               aria-controls="panel6" 
+               tabindex="0">CRYPTICGEN</label>
+        <div id="tab-content6" 
+             class="tab-content"
+             role="tabpanel" 
+             aria-labelledby="crypticgen" 
+             aria-hidden="true">
+             <i>technologies: Vue, Node.js/Express, PostgreSQL, HTML/CSS</i>
+             <br/><img src="/assets/crypticgen.png"/>Web app (a very sparkly web app) that generates writing prompts (or surprising tweets!) from a database of unusual vocabulary.
+             <br>
+             Check it out <a href="https://github.com/caxwel/crypticgen">here</a> on my github! <br/><br/>              
+            </div>
+    </li>
+
+    <li>
+        <input type="radio" name="tabs" id="tab7" />
+        <label for="tab7"
+               role="tab" 
+               aria-selected="false" 
+               aria-controls="panel7" 
+               tabindex="0">STARFIELD</label>
+        <div id="tab-content7" 
+             class="tab-content"
+             role="tabpanel" 
+             aria-labelledby="starfield" 
+             aria-hidden="true">
+             <i>technologies: Unity/C#, WebGL</i>
+             <br/><img src="/assets/starfield.png"/>Experiment/web mini game where you can make and customize your own starfield and explore a mysterious part of space. <br/>
+             Created as a challenge to learn a new language in 4 days (I chose C# and, if you keep reading here, you'll see I revisited it right away).
+             <br/>
+             Check it out <a href="https://github.com/caxwel/star-field">here</a> on my github, with a link to play it yourself!              
+            </div>
+    </li>
+</ul>
+
+<br style="clear: both;" />
 </div>
